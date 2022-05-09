@@ -1,5 +1,4 @@
 import {pi,sumar, sumarArrow, sumarArrowEnUnaLinea} from "./src/modules/matematicas.js";
-import Persona from "./src/modules/Persona.js"
 
 let total = 0;
 
