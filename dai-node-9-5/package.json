@@ -4,7 +4,6 @@
   "description": "proyecto-1",
   "main": "index.js",
   "type": "module",
-
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
@@ -14,5 +13,8 @@
     "start4": "node index04.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "flags": "^0.1.3"
+  }
 }

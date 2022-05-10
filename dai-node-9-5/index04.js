@@ -1,11 +1,25 @@
-import { fs } from "fs";
-import  "./src/modules/testito.txt";
+import fs from "fs";
+
+var path = './src/modules/testito.txt'
+/*let patito = (err,data)=>{
+  if(err){
+    throw err;
+  }
+  console.log(data.toString())
+}
+fs.readFile(path,patito)*/
+
+fs.readFile(path,(err,data) => {
+  if(err){
+    throw err;
+  }
+  console.log(data.toString())
+})
 
 
-fs.readFile('./src/modules/testito.txt', 'utf8', (err, data) => {
-    if (err) {
-      console.error(err);
-      return;
-    }
-    console.log(data);
-  });
+const content = 'Tuki';
+fs.writeFile(path, content, err => {
+  if (err) {
+    console.error(err);
+  }
+});
